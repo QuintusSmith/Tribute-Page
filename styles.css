@@ -1,34 +1,47 @@
-body
+*,
+*::after,
+*::before
 {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+}
+
+body
+{
   width: 100vw;
   height: 100vh;
   font-size: 1vmin;
+  background-color: black;
 }
 
-.main
+#main
 {
-  
+  width: 100vw;
+  height: 100vh;
+  background-color: red;
 }
 
 #title
 {
-  
+  background-color: orange;
+  width: 100%;
 }
 
 #img-div
 {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items:center;
   flex-direction: column;
+  background-color: blue;
 }
 
 #image
 {
   max-width: 100%;
+  width: 80%;
   height: auto;
 }
 
