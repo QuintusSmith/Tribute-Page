@@ -33,7 +33,7 @@ body
   width: 100vw;
   height: 100vh;
   font-size: 1vmin;
-  background-color: var(--middle-blue-green);
+  background-color: hsla(161, 54%, 67%, .3);
   overflow-x: hidden;
 }
 
@@ -41,6 +41,17 @@ body
 {
   width: 100vw;
   height: 100vh;
+}
+
+#img-div
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+  position: relative;
+  background-color: #ccc;
 }
 
 .image-overlay-text
@@ -57,42 +68,24 @@ body
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
+  letter-spacing: .5rem;
 }
 
 #title
 {
-  text-align: center;
   font-size: 5rem;
   font-weight: 700;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  letter-spacing: .5rem;
-  margin-bottom: .5rem;
   color: hsla(224, 56%, 22%, 1);
 }
 
 #sub-title
 {
-  text-align: center;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   font-family: monospace;
   color: hsl(0, 0%, 20%);
-  letter-spacing: .5rem;
-}
-
-figure
-{
-  
-}
-
-#img-div
-{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items:center;
-  flex-direction: column;
-  position: relative;
-  background-color: #ccc;
+  font-weight: 400;
+  font-style: italic;
 }
 
 #image
@@ -105,10 +98,63 @@ figure
 
 #img-caption
 {
+  font-size: .9rem;
+  font-weight: 100;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: .4rem;
+}
 
+#img-caption b
+{
+  font-weight: bold;
 }
 
 #tribute-info
 {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+}
 
+#tribute-info h2
+{
+  letter-spacing: .15rem;
+  font-size: 2.3rem;
+  font-family: 'Times New Roman', Times, serif;
+  color: hsl(0, 0%, 20%);
+  font-weight: 600;
+  margin-bottom: 1.4rem;
+  margin-top: 2rem;
+}
+
+#tribute-info article
+{
+  line-height: 2rem;
+  font-size: 1.4rem;
+  font-family: 'Times New Roman', Times, serif;
+  color: hsl(0, 0%, 30%);
+  font-weight: 400;
+  margin-bottom: 1.4rem;
+}
+
+footer
+{
+  background-color: #ccc;
+  width: 100%;
+  display: flex;
+  font-family: 'Times New Roman', Times, serif;
+  color: hsl(0, 0%, 30%);
+  font-weight: 700;
+  justify-content: center;
+  align-items: center;
+}
+
+#tribute-link
+{
+  text-decoration: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  display: inline-block;
+  padding: 1rem;
 }
